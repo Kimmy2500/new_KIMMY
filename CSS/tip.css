@@ -1,0 +1,147 @@
+
+	body{
+		min-width: 1050px;
+	}
+	.container{
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	
+	.title{
+		width: 100%;
+		margin: auto;
+		position: relative;
+		padding: 50px 0 50px;
+		text-align: center;
+		font-family: 'Lora', serif;
+		font-weight: bold;
+		text-decoration: none;
+	
+	}
+	h1 {
+	
+		height: 50px;
+		margin: auto;
+		text-align: center;
+		text-decoration: none;
+
+	}
+
+	.container h1 a{text-decoration: none;}
+	.container .nav_top a{text-decoration: none;}
+
+	.contents{
+		margin: 0 auto ;
+		position: relative;
+
+	}
+	.nav_area{
+		padding-right: 40px;
+		margin-bottom: 10px;
+		width: 100%;
+		text-align: center;
+		background-color: #626a8f;
+
+	}
+
+	.nav_area a{
+		padding-left: 80px;
+		margin-top: 10px;
+		font-size: 20px;
+		font-weight: bold;
+		color: white;
+		text-align: center;
+	}
+	.nav_row{
+		width: 100%;
+	}
+	.nav_row .panel_heading a{
+		text-decoration: none;
+	}
+	.nav_row .panel_heading{
+		padding:1px;
+	}
+	.nav_row #panel1{
+		height: 63px;
+		background-color: #e3e4f0;
+		display: none;
+		text-align: center;
+		color: #626a8f;
+
+	}
+	.tip_area{
+		padding-left: 47px;
+		padding-top: 20px;
+		position: relative;
+	}
+	.tip_text{
+		position: relative;
+		width: 100%;
+		color: #626a8f;
+	}
+	.tip_title{
+		color: #626a8f;
+		font-size: 22px;
+		font-family: 'Roboto', sans-serif;
+		height: 30px;
+		display: inline-block;
+		padding-right: 10px;
+		
+	}
+
+	.tip_video{
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		display: block;
+	}
+
+	iframe{
+		padding-top: 20px;
+	}
+	.pHover{
+		width: 350px;
+	}
+	.ani_area{
+		float: left;
+		display: inline-block;
+		width: 40%;
+		height: 400px;
+		padding-left: 40px;
+		margin-left: 110px;
+	}
+	
+	.ani_area button{
+		background-color: #ffd2c2;
+	}
+	.drop_flower{
+		display: block;
+		width: 40%;
+		float: left;
+		color: #626a8f;
+		font-weight: bold;
+	}
+
+	.droptarget {
+	    float: left; 
+	    width: 150px; 
+	    height: 150px;
+	    margin: 15px;
+	    padding: 10px;
+	    border: 1px solid #aaaaaa;
+	}
+	
+	footer{
+		padding: 50px 0 100px;
+		width: 100%;
+		margin: auto;
+		text-align: center;	
+		column-count: 3;
+		column-gap: 40px;
+		column-rule-style: solid;
+		column-rule-width: 1px;
+		margin-left: 30px;
+		column-rule: 1px solid lightblue;
+	}

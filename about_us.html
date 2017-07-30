@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--META tags-->
+	<meta charset="UTF-8">
+	<meta name="author" content="KIMMY">
+	<meta name="keywords" content="flower, bouquet">
+
+	<link rel="stylesheet" href="./CSS/about_us.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="./JS/index.js"></script>
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+
+	<title>About us page</title>
+
+</head>
+<body>
+	<div class="container"><!-- container-->
+
+		<div class="title"><!-- title-->
+
+			<h1><a href="index.html">Le petit  FLOWER</a></h1>
+
+		</div><!-- title end-->
+
+		<div class="contents"><!-- contents-->
+
+			<div class="nav_area"><!-- nav_area-->
+
+				<nav class="nav_top">
+
+				  <a href="store.html">STORE</a>
+				  <a id="btn" href="javascript:toggleDiv('panel1');">ABOUT US</a>
+				  <a href="event.html">EVENT</a>
+				  <a href="tip.html">TIP!</a>
+
+				</nav>
+			</div><!-- nav_areaend-->
+
+				<div class="nav_row"><!-- toggle panel -->
+
+						<div id="panel1" clase="panel panel-primary">
+
+							<div class="panel_heading">
+
+								<a href="about_us.html"><h4>Brand Introduction</h4></a>
+								<a href="#contact_a"><h4>Contact</h4></a>
+
+							</div>
+
+					</div>
+				</div><!-- toggle panel end-->
+
+		</div><!-- contents end-->
+		
+		<div class="about_area"><!--about us area-->
+
+			<div class="about_text">
+			
+				<p><h2 class="about_title">ABOUT US</h2> "Le petit Flower" wants to share beautiful flowers with everyone.</p>
+
+			</div>
+
+			<div class="about_img">
+				<img src="Images/about.jpg" alt="store_tip">
+			</div>
+
+			<div class="about_desc">
+				
+				<p><h2 class="desc_title">BRAND STORY</h2> "Le petit Flower" is run by a 10-year-old florist "Eva".
+Our brand is pre-sold to sell flowers at reasonable prices.
+Online delivery is not available and can only be booked. If you book flowers online and by phone, you can come to the store and pick up the day you specified.
+The "EVENT" page once every two months allows you to see a variety of flowers at lower prices.</p>
+			</div>
+
+		</div><!--about us area end-->
+
+		<a name="contact_a"></a>
+		<div class="contact_area"><!--contact area-->
+			
+			<div class="con_img">
+				<img src="Images/about02.jpg" alt="">
+			</div>
+
+			<div class="con_text">
+				<h2 class="con_title"> CONTACT </h2>
+				<p class="con_contents"><br><br><strong>E-MAil</strong> : petitflower@gmail.com<br><br><strong>PHONE NUMBER</strong> : 021-3623-3287<br><br><strong>ADDRESS</strong> : Queen Street & Wellesley Street, Auckland, 1010</p>
+
+			</div>
+
+			<div class="order_form"><!--order_form-->
+				<h2 class="order_title">Pre-Order</h2>
+
+				<form action="about_us.html" method="post"  onreset="myFunction()">
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<td> <input type="text" id="fname" name="n1"  placeholder="Enter name" required  onkeyup="myFunction()"></input>
+
+						</tr>
+
+						<tr>
+							<th>ID</th><!--part.20_used form event__When you press the input box, the background color changes.-->
+							<td> <input class="inputS" type="text" placeholder="Enter ID" required></input> 
+
+						</tr>
+
+						<tr>
+							<th>Phone(country code<br>. area code. number</th>
+							<td>
+							(+ <input type="text" name="c1" required placeholder="2digit" maxlength="2" onkeypress="return isNumber(event)" size="2">)</input>
+							<input type="text" name="c2" required placeholder="2digit" maxlength="2" onkeypress="return isNumber(event)" size="2">-</input> 
+							<input type="text" name="c3" required placeholder="6digit" maxlength="6" onkeypress="return isNumber(event)" ></input>
+
+							</td>
+						</tr>
+
+						<tr>
+							<th>E-mail</th>
+							<td><input type="email" id="e_mail" required name="e1" placeholder="Enter email"></input></td>
+						</tr>
+
+						<tr>
+							<th>Comments Questions</th><!--part.20_used keyboard event_when clicked esc key, an alert window appears.-->
+
+							<td><textarea id="comments" name="co1" placeholder="Enter comments here" onkeydown="myFunction(event)" required maxlength="200"></textarea> </td>
+						</tr>
+
+						<tr>
+							<td class="submit" colspan="2" align="center">
+								 <input type="submit" name="s1" value="Submit">
+								 <input type="reset" value="Clear ths Form">
+							</td>
+						</tr>
+					</table>
+
+
+				</form>
+			</div><!--order_form end-->
+		</div><!--contact area end-->
+		
+		
+
+		<section class="footer"><!-- footer/ Used multiple columns -->			
+
+			<footer>
+
+				<strong>COMPANY</strong><br><strong>Brand name </strong>Le Petit FLOWER<br><strong>CONTACT US</strong><br><strong>E-mail </strong>lepetit@gmail.com<br><strong>Copyright</strong><br>ⓒ2014~2017 le petit flower. All Rights Reserved.<br>
+
+			</footer>
+
+		</section>
+
+	</div><!-- container end-->
+
+
+</body>
+</html>

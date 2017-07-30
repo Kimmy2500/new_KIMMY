@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--META tags-->
+	<meta charset="UTF-8">
+	<meta name="author" content="KIMMY">
+	<meta name="keywords" content="flower, bouquet">
+
+	<link rel="stylesheet" href="./CSS/tip.css">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Add fancyBox -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+        <script type="text/javascript" src="./JS/index.js"></script>
+
+ <link rel="stylesheet" href="/resources/demos/style.css">
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+
+	<title>TIP page</title>
+
+</head>
+<body>
+	<div class="container"><!-- container-->
+
+		<div class="title"><!-- title-->
+
+			<h1><a href="index.html">Le petit  FLOWER</a></h1>
+
+		</div><!-- title end-->
+
+		<div class="contents"><!-- contents-->
+
+			<div class="nav_area"><!-- nav_area-->
+
+				<nav class="nav_top">
+
+				  <a href="store.html">STORE</a>
+				  <a id="btn" href="javascript:toggleDiv('panel1');">ABOUT US</a>
+				  <a href="event.html">EVENT</a>
+				  <a href="tip.html">TIP!</a>
+
+				</nav>
+			</div><!-- nav_areaend-->
+
+				<div class="nav_row"><!-- toggle panel -->
+
+						<div id="panel1" clase="panel panel-primary">
+
+							<div class="panel_heading">
+
+								<a href="about_us.html"><h4>Brand Introduction</h4></a>
+								<a href="about_us.html"><h4>Contact</h4></a>
+
+							</div>
+
+					</div>
+				</div><!-- toggle panel end-->
+
+		</div><!-- contents end-->
+		
+		<div class="tip_area"><!--Tip area-->
+
+			<div class="tip_text">
+			
+				<p><h2 class="tip_title">KEEPING FLOWERS</h2> How to keep your flowers.</p>
+
+				
+
+
+			</div>
+
+			<div class="tip_video"><!--part.22_YouTube clip-->
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/B4MJjYHOGZg?&autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/cw2bUskm7dU" frameborder="0" allowfullscreen></iframe>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Smd44LVahh0" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<diq class="ani_area">
+
+				<button>Make your own bouquet</button>
+
+				<!--part.19_Used animate-->
+				<div id="ani_box" style="height:100px;width:100px;position:absolute;"><img src="./Images/tip_ani.jpg" alt="ani_image"></div>
+			</diq>
+
+			
+
+		</div><!--Tip area end-->
+
+		<div class="drop_flower"><!--part.21_used droppable-->
+
+			<p class="pHover">You can move the pot to another box.</p>
+				<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+				  <img ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget" src="./Images/drop_flower.jpg" alt="flower">
+				</div>
+				 
+				<div id="drop_bg" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			</div>
+
+		<section class="footer"><!-- footer/ Used multiple columns -->			
+
+			<footer>
+
+				<strong>COMPANY</strong><br><strong>Brand name </strong>Le Petit FLOWER<br><strong>CONTACT US</strong><br><strong>E-mail </strong>lepetit@gmail.com<br><strong>Copyright</strong><br>ⓒ2014~2017 le petit flower. All Rights Reserved.<br>
+
+			</footer>
+
+		</section>
+
+	</div><!-- container end-->
+
+
+</body>
+</html>
